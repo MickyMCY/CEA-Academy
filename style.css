@@ -168,8 +168,9 @@ body {
 }
 
 .student-image {
-    width: 256px;
-    height: 256px;
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 12px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
@@ -550,8 +551,7 @@ body {
     }
     
     .student-image {
-        width: 320px;
-        height: 320px;
+        max-width: 500px;
     }
 }
 
@@ -573,8 +573,7 @@ body {
     }
     
     .student-image {
-        width: 200px;
-        height: 200px;
+        max-width: 300px;
     }
     
     .teacher-item {
