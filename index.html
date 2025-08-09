@@ -1,42 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Centro de Educação Altar - Excelência Educacional</title>
-    <meta name="description" content="Centro de Educação Altar oferece preparação completa para exames de admissão e reforço escolar com professores experientes em Bagamoio, Maputo.">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="description" content="Centro de Educação Altar oferece preparação completa para exames de admissão e reforço escolar com professores experientes em Bagamoio, Maputo." />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 
     <style>
-        /* Garantir que não apareça fundo branco no fim */
+        /* Ajustes para eliminar espaço branco após o rodapé */
         html, body {
-            height: 100%;
+            min-height: 100vh; /* altura mínima da viewport */
             margin: 0;
             padding: 0;
             overflow-x: hidden;
             background-color: #f4f4f4;
-        }
-
-        /* Garantir que o rodapé fique sempre no final */
-        body {
             display: flex;
             flex-direction: column;
         }
+
+        body {
+            flex: 1 0 auto;
+        }
+
+        /* Garantir que o rodapé fique sempre no final */
         footer.footer {
             margin-top: auto;
+            flex-shrink: 0;
         }
 
         /* Ajustar imagem para ser quadrada e preencher */
         .image-container {
             width: 100%;
             max-width: 400px;
-            aspect-ratio: 1/1;
+            aspect-ratio: 1 / 1;
             overflow: hidden;
             border-radius: 10px;
             margin: 0 auto;
         }
+
         .student-image {
             width: 100%;
             height: 100%;
@@ -94,7 +98,7 @@
     <section class="image-section">
         <div class="container">
             <div class="image-container">
-                <img src="imagem.jpg" alt="Estudantes em sala de aula" class="student-image">
+                <img src="imagem.jpg" alt="Estudantes em sala de aula" class="student-image" />
             </div>
         </div>
     </section>
@@ -300,13 +304,13 @@
     <section class="contact">
         <div class="container">
             <h3 class="section-title">Entre em Contacto</h3>
-            
+
             <div class="contact-info">
                 <div class="contact-item">
                     <i class="fas fa-map-marker-alt contact-icon"></i>
                     <span>Bagamoio, Maputo, Moçambique</span>
                 </div>
-                
+
                 <div class="contact-phones">
                     <div class="contact-item">
                         <i class="fas fa-phone contact-icon"></i>
