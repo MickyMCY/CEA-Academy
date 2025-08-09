@@ -8,6 +8,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        /* Garantir que não apareça fundo branco no fim */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background-color: #f4f4f4;
+        }
+
+        /* Garantir que o rodapé fique sempre no final */
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        footer.footer {
+            margin-top: auto;
+        }
+
+        /* Ajustar imagem para ser quadrada e preencher */
+        .image-container {
+            width: 100%;
+            max-width: 400px;
+            aspect-ratio: 1/1;
+            overflow: hidden;
+            border-radius: 10px;
+            margin: 0 auto;
+        }
+        .student-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+    </style>
 </head>
 <body>
     <!-- Header -->
