@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    max-width: 100%;
 }
 
 html {
@@ -13,6 +14,7 @@ html {
     overflow-y: auto;
     scroll-behavior: smooth;
     overscroll-behavior: none; /* evita o scroll extra no rodapé */
+    max-width: 100vw;
 }
 
 body {
@@ -22,6 +24,10 @@ body {
     background-color: #f8fafc;
     overflow-x: hidden;
     min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 100vw;
 }
 
 /* Color Variables */
@@ -164,19 +170,24 @@ body {
 }
 
 .image-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    aspect-ratio: 1 / 1; /* mantém quadrado */
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
 }
 
 .student-image {
     width: 100%;
-    max-width: 500px;
-    aspect-ratio: 1 / 1; /* mantém quadrado */
-    object-fit: cover; /* preenche mantendo proporção */
+    height: 100%;
+    object-fit: cover;
+    display: block;
     border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
 /* Section Styles */
@@ -461,6 +472,7 @@ body {
     background: var(--dark-gray);
     color: var(--white);
     padding: 32px 0;
+    margin-top: auto; /* garante que fique no final */
 }
 
 .footer-content {
@@ -575,7 +587,7 @@ body {
         font-size: 28px;
     }
     
-    .student-image {
+    .image-container {
         max-width: 300px;
     }
     
@@ -590,19 +602,4 @@ body {
     .testimonial-item {
         padding: 20px;
     }
-}
-
-/* Prevent horizontal scroll on all screen sizes */
-body, html {
-    max-width: 100vw;
-    overflow-x: hidden;
-}
-
-* {
-    max-width: 100%;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
 }
